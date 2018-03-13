@@ -3,7 +3,7 @@ title:            "LiBingtao|GitHub blog"
 description:      ""
 url:              https://LiBingtao.github.io # 域名
 signoff:          "LiBingtao" # Your name
-facebook_appid:   #liberxue
+facebook_appid:   #LiBingtao
 google_analytics: UA-101222464-1
 share:            true 
 # 分页
@@ -13,6 +13,9 @@ gems: [jekyll-paginate]
 links:
   - name:         首页
     url:          /
+    external:     false
+  - name:         Code
+    url:          /code
     external:     false
   - name:         书籍
     url:          /book
