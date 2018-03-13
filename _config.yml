@@ -15,7 +15,7 @@ links:
     url:          /
     external:     false
   - name:         Code
-    url:          /Code
+    url:          /code
     external:     false
   - name:         书籍
     url:          /book
