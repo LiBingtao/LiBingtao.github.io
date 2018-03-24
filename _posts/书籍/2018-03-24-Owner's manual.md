@@ -1,15 +1,12 @@
 ---
 layout: blog
 book: true
-title:  "Owner's manual for my outlier detection software"
-background: green
-background-image: https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/屏幕快照%202018-03-24%20下午10.39.12.png
-date:   2018-03-24 23:02:03
-category:书籍
+background-image: https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/屏幕快照%202018-03-24%20下午
+category: 书籍
+title: Owner's manual for my outlier detection software
 tags:
 - Outlier detection
 ---
-
 
 
 ## Lab curve
