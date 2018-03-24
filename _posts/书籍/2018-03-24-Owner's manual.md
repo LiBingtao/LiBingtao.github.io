@@ -1,9 +1,9 @@
 ---
 layout: blog
-Code: true
-title:  "Owner's manual for outlier detection software"
+book: true
+title:  "Owner's manual for my outlier detection software"
 background: green
-background-image: https://www.patest.cn/p/images/logo.png
+background-image: https://github.com/LiBingtao/LiBingtao.github.io/blob/master/image/屏幕快照%202018-03-24%20下午10.39.12.png
 date:   2018-03-24 23:02:03
 category:书籍
 tags:
@@ -21,7 +21,7 @@ tags:
 
 * First you should put your data in an excel sheet named "MICP":
 
-  ![幕快照 2018-03-24 下午8.44.0](/Users/libingtao/GitHub/LiBingtao.github.io/image/屏幕快照 2018-03-24 下午8.44.03.png)
+  ![幕快照 2018-03-24 下午8.44.0](https://github.com/LiBingtao/LiBingtao.github.io/tree/master/image/屏幕快照 2018-03-24 下午8.44.03.png)
 
 * Then organize your data like this:
 
@@ -29,7 +29,7 @@ tags:
   * Second column is sample id
   * The next two columns are saturation and pressure of mercury injection
 
-  ![幕快照 2018-03-24 下午8.49.0](/Users/libingtao/GitHub/LiBingtao.github.io/image/屏幕快照 2018-03-24 下午8.49.04.png)
+  ![幕快照 2018-03-24 下午8.49.0](https://github.com/LiBingtao/LiBingtao.github.io/tree/master/image/屏幕快照 2018-03-24 下午8.49.04.png)
 
 ### 2. Software manual 
 
@@ -44,7 +44,7 @@ tags:
 
   * Pick the data point in "MICP outlier detection" figure, more detail will be displayed on the bottom.Left are common used MICP parameters and throat radius distribution.Right is the cubic curve used for outlier detection and the residual distributionthat between real data and predict data
 
-    ![幕快照 2018-03-24 下午10.36.5](/Users/libingtao/GitHub/LiBingtao.github.io/image/屏幕快照 2018-03-24 下午10.36.55.png)
+    ![幕快照 2018-03-24 下午10.36.5](https://github.com/LiBingtao/LiBingtao.github.io/tree/master/image/屏幕快照 2018-03-24 下午10.36.55.png)
 
 ## Well log
 
@@ -54,15 +54,15 @@ tags:
 
   * Every single well should correspond to a single las file and an single excel file whose name should has a format as {"well name(no space) + " "(space) + "other information"(anything will be fine)}, the name of this two file should be same except suffix.
 
-    ![幕快照 2018-03-24 下午9.29.3](/Users/libingtao/GitHub/LiBingtao.github.io/image/屏幕快照 2018-03-24 下午9.29.38.png)
+    ![幕快照 2018-03-24 下午9.29.3](https://github.com/LiBingtao/LiBingtao.github.io/tree/master/image/屏幕快照 2018-03-24 下午9.29.38.png)
 
     * The excel file should contain the top depth of layers of the well.First column is "surface name" which is the layer name, second column is "depth" which is the top depth of layer.This file should only have one sheet.
 
-      ![幕快照 2018-03-24 下午9.37.0](/Users/libingtao/GitHub/LiBingtao.github.io/image/屏幕快照 2018-03-24 下午9.37.04.png)
+      ![幕快照 2018-03-24 下午9.37.0](https://github.com/LiBingtao/LiBingtao.github.io/tree/master/image/屏幕快照 2018-03-24 下午9.37.04.png)
 
   * An excel file named "coordinate" contains the coordinate of all the well in your directory.First column is "well name", second column and third column must be x and y coordinate of the well.These data should be in a sheet named "coordinate".
 
-    ![幕快照 2018-03-24 下午9.46.1](/Users/libingtao/GitHub/LiBingtao.github.io/image/屏幕快照 2018-03-24 下午9.46.14.png)
+    ![幕快照 2018-03-24 下午9.46.1](https://github.com/LiBingtao/LiBingtao.github.io/tree/master/image/屏幕快照 2018-03-24 下午9.46.14.png)
 
   * Any other file shouldn't appear in this directory
 
@@ -83,7 +83,7 @@ tags:
 
   * Pick the data point in "Well log outlier detection" figure, the curve of the well you choosed is displayed highlight on the lower-right corner
 
-    ![幕快照 2018-03-24 下午10.17.1](/Users/libingtao/GitHub/LiBingtao.github.io/image/屏幕快照 2018-03-24 下午10.17.17.png)
+    ![幕快照 2018-03-24 下午10.17.1](https://github.com/LiBingtao/LiBingtao.github.io/tree/master/image/屏幕快照 2018-03-24 下午10.17.17.png)
 
 ## 3D Spacial data
 
@@ -109,7 +109,7 @@ tags:
 
   - Click the "outlier detect button",two method(polynomial surface fitting and moving window surface fitting) were applied on the spacial data, which were the mean value of the well log curve in the layer you choosed. The outlier is the red point in the figure.Under each surface is the distribution of  residual.
 
-    ![幕快照 2018-03-24 下午10.39.1](/Users/libingtao/GitHub/LiBingtao.github.io/image/屏幕快照 2018-03-24 下午10.39.12.png)
+    ![幕快照 2018-03-24 下午10.39.1](https://github.com/LiBingtao/LiBingtao.github.io/tree/master/image/屏幕快照 2018-03-24 下午10.39.12.png)
 
 ## Data statistics
 
@@ -131,11 +131,11 @@ tags:
 
   - Click the "plot" button, then a boxplot and a correlation matrix will be displayed like:
 
-    ![幕快照 2018-03-24 下午10.44.2](/Users/libingtao/GitHub/LiBingtao.github.io/image/屏幕快照 2018-03-24 下午10.44.27.png)
+    ![幕快照 2018-03-24 下午10.44.2](https://github.com/LiBingtao/LiBingtao.github.io/tree/master/image/屏幕快照 2018-03-24 下午10.44.27.png)
 
   - Click the "pairplot" button,all the data will be displayed in a new dialog.You can also define the kind of pairplot.
 
-    ![幕快照 2018-03-24 下午10.47.4](/Users/libingtao/GitHub/LiBingtao.github.io/image/屏幕快照 2018-03-24 下午10.47.46.png)
+    ![幕快照 2018-03-24 下午10.47.4](https://github.com/LiBingtao/LiBingtao.github.io/tree/master/image/屏幕快照 2018-03-24 下午10.47.46.png)
 
 
 
