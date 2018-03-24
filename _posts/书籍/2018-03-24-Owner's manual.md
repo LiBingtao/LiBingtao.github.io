@@ -1,7 +1,7 @@
 ---
 layout: blog
 book: true
-background-image: https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/屏幕快照%202018-03-24%20下午
+background-image: https://github.com/LiBingtao/LiBingtao.github.io/blob/master/image/屏幕快照%202018-03-24%20下午10.39.12.png
 category: 书籍
 title: Owner's manual for my outlier detection software
 tags:
