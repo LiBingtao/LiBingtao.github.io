@@ -11,9 +11,6 @@ tags:
 ---
 
 
-# Owner's manual
-
-[TOC]
 
 ## Lab curve
 
