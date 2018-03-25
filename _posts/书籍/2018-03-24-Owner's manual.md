@@ -8,6 +8,10 @@ tags:
 - Outlier detection
 ---
 
+Author:
+
+- LiBingtao:lbt67784273@gmail.com
+- LiYupeng:yupeng.li@aramcoasia.com
 
 ## Lab curve
 
@@ -58,7 +62,7 @@ tags:
 
   * Every single well should correspond to a single las file and an single excel file whose name should has a format as {"well name(no space) + " "(space) + "other information"(anything will be fine)}, the name of this two file should be same except suffix.
     <div align="left">
-    <img src="https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/屏幕快照%202018-03-24%20下午9.29.38.png" width="300" >
+    <img src="https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/屏幕快照%202018-03-25%20下午1.47.32.png" width="300" >
 
     </div>
 
@@ -71,7 +75,7 @@ tags:
   * An excel file named "coordinate" contains the coordinate of all the well in your directory.First column is "well name", second column and third column must be x and y coordinate of the well.These data should be in a sheet named "coordinate".
 
     <div align="left">
-    <img src="https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/屏幕快照%202018-03-24%20下午9.46.14.png" width="280" >
+    <img src="https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/屏幕快照%202018-03-25%20下午1.48.45.png" width="280" >
 
     </div>
 
@@ -94,7 +98,7 @@ tags:
 
   * Pick the data point in "Well log outlier detection" figure, the curve of the well you choosed is displayed highlight on the lower-right corner
     <div align="left">
-    <img src="https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/屏幕快照%202018-03-24%20下午10.17.17.png" width="500" >
+    <img src="https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/屏幕快照%202018-03-25%20下午1.50.21.png" width="500" >
 
     </div>
 
@@ -123,7 +127,7 @@ tags:
 
   - Click the "outlier detect button",two method(polynomial surface fitting and moving window surface fitting) were applied on the spacial data, which were the mean value of the well log curve in the layer you choosed. The outlier is the red point in the figure.Under each surface is the distribution of  residual.
     <div align="left">
-    <img src="https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/屏幕快照%202018-03-24%20下午10.39.12.png" width="500" >
+    <img src="https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/屏幕快照%202018-03-25%20下午1.49.20.png" width="500" >
 
     </div>
 
@@ -147,7 +151,7 @@ tags:
 
   - Click the "plot" button, then a boxplot and a correlation matrix will be displayed like:
     <div align="left">
-    <img src="https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/屏幕快照%202018-03-24%20下午10.44.27.png" width="500" >
+    <img src="https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/屏幕快照%202018-03-25%20下午1.51.02.png" width="500" >
 
     </div>
 
@@ -156,10 +160,4 @@ tags:
     <img src="https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/屏幕快照%202018-03-24%20下午10.47.46.png" width="500" >
 
     </div>
-
-
-
-If you have any problem, welcome to contact me:
-
-* My email: lbt67784273@gmail.com
 
