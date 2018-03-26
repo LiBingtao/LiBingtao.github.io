@@ -2,14 +2,14 @@
 
 layout: blog
 Code: true
-title:  "Pat总结"
+title:  "高维数据可视化"
 background: green
 background-image: https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_40_2.png
-date:   2018-03-13 22:33:03
+date:   2018-03-26 22:07:03
 category: Code
 tags:
 
-- pat考试
+- 数据可视化
 
 ---
 
@@ -599,3 +599,8 @@ ax.set_zlabel('CAL')
 
 ### 更高维度……
 暂时没有想出更高维度的数据直接可视化的方法，折中的办法是利用PCA和TSNE等方法进行降维之后再进行可视化，但可解释性降低
+
+## Reference
+
+*https://towardsdatascience.com/the-art-of-effective-visualization-of-multi-dimensional-data-6c7202990c57*
+
