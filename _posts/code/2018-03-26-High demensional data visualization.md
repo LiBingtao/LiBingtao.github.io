@@ -1,5 +1,20 @@
+---
+
+layout: blog
+Code: true
+title:  "Pat总结"
+background: green
+background-image: https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_40_2.png
+date:   2018-03-13 22:33:03
+category: Code
+tags:
+
+- pat考试
+
+---
 
 # 高维测井数据可视化
+
 ## 介绍 
 >描述性分析（descriptive analytics）是分析任何数据科学项目或特定研究的核心组成部分。数据聚合（aggregation）、汇总（summarization）和可视化（visualization）是支撑数据分析领域的主要支柱。从传统商业智能（Business Intelligence）开始，甚至到如今人工智能时代，数据可视化都是一个强有力的工具；由于其能有效抽取正确的信息，同时清楚容易地理解和解释结果，可视化被业界组织广泛使用。  
 
@@ -150,7 +165,7 @@ plt.tight_layout(rect=(0, 0, 1.5, 1.5))
 ```
 
 
-![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/屏幕快照%202018-03-24%20下午8.44.03.png)
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_9_0.png)
 
 
 上图方便的可视化任何属性的基本数据分布。
@@ -179,15 +194,8 @@ ax1.set_title("SP Distribution in rock")
 sns.kdeplot(rock['SP'], ax=ax1, shade=True, color='steelblue')
 ```
 
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x11bec6828>
-    
-    
-
-![png](output_11_1.png)
-![png](output_11_1.png)
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_11_1.png)
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_11_1.png)
 
 
 从上面的图表中可以看出，数据中的SP属性分布是明显的双峰，跟砂泥岩相对应。
@@ -209,7 +217,7 @@ t= f.suptitle('Rock well log data Correlation Heatmap', fontsize=14)
 ```
 
 
-![png](output_14_0.png)
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_14_0.png)
 
 
 热力图中的颜色根据相关性的强度而变化，可以很容易发现彼此之间具有强相关性的潜在属性。另一种可视化的方法是在感兴趣的属性之间使用pairplot
@@ -226,7 +234,7 @@ t = fig.suptitle('Rock well log data Pairwise Plots', fontsize=14)
 ```
 
 
-![png](output_16_0.png)
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_16_0.png)
 
 
 根据上图，可以看到散点图也是观察数据属性的 2 维潜在关系或模式的有效方式。另一种将多元数据可视化为多个属性的方法是使用平行坐标图。 
@@ -342,7 +350,7 @@ pc = parallel_coordinates(final_df, 'rock_type', color=('#FFE888', '#FF9999'))
 ```
 
 
-![png](output_19_0.png)
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_19_0.png)
 
 
 上图中，点被表征为连接的线段。每条垂直线代表一个数据属性。所有属性中的一组完整的连接线段表征一个数据点。因此，趋于同一类的点将会更加接近。通过观察就可以清楚看到，砂岩的自然电位（SP）,自然伽马（GR）,井径（CAL）,中子测井（CNL）明显偏低，而深浅电阻率差（RC）和密度测井（DEN）明显偏高。  
@@ -360,17 +368,7 @@ plt.ylabel('GR')
 plt.title('Rock SP - GR Content',y=1.05)
 ```
 
-
-
-
-    Text(0.5,1.05,'Rock SP - GR Content')
-    
-    
-
-![png](output_21_1.png)
-![png](output_21_1.png)
-
-
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_21_1.png)
 
 ```python
 # Joint Plot
@@ -378,15 +376,7 @@ sns.jointplot(x='SP', y='GR', data=rock,
                    kind='kde', space=0, size=5, ratio=4)
 ```
 
-
-
-
-    <seaborn.axisgrid.JointGrid at 0x11afe4ba8>
-    
-    
-
-![png](output_22_1.png)
-![png](output_22_1.png)
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_22_1.png)
 
 
 接下来，我们看一下如何进行二维混合数据的可视化（连续的GR和离散的rock type）
@@ -408,7 +398,7 @@ plt.close(2)
 ```
 
 
-![png](output_24_0.png)
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_24_0.png)
 
 
 可以看到上面生成的图形清晰简洁，我们可以轻松地比较各种分布。  
@@ -427,15 +417,7 @@ sns.violinplot(data=rock.iloc[:,[0,1,2,3,5]],  ax=ax1, width=1.1)
 f.suptitle('Well log data distribution in box and violin plot', fontsize=14)
 ```
 
-
-
-
-    Text(0.5,0.98,'Well log data distribution in box and violin plot')
-    
-    
-
-![png](output_26_1.png)
-![png](output_26_1.png)
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_26_1.png)
 
 
 ### 可视化3维数据（3D）
@@ -452,7 +434,7 @@ t = fig.suptitle('Well log data Pairwise Plots', fontsize=14)
 ```
 
 
-![png](output_28_0.png)
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_28_0.png)
 
 
 上图可以查看相关性和模式，也可以比较岩性。我们可以清楚地看到砂岩的SP和GR比泥岩低。
@@ -476,15 +458,7 @@ ax.set_ylabel('GR')
 ax.set_zlabel('CAL')
 ```
 
-
-
-
-    Text(0.5,0,'CAL')
-    
-    
-
-![png](output_30_1.png)
-![png](output_30_1.png)
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_30_1.png)
 
 
 我们还可以利用常规的 2 维坐标轴，并将尺寸大小的概念作为第 3 维（本质上是气泡图），其中点的尺寸大小表征第 3 维的数量。
@@ -499,15 +473,7 @@ plt.ylabel('GR')
 plt.title('Rock SP - GR - CAL',y=1.05)
 ```
 
-
-
-
-    Text(0.5,1.05,'Rock SP - GR - CAL')
-    
-    
-
-![png](output_32_1.png)
-![png](output_32_1.png)
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_32_1.png)
 
 
 ### 可视化4维数据（4D）
@@ -537,15 +503,7 @@ ax.set_ylabel('GR')
 ax.set_zlabel('CAL') 
 ```
 
-
-
-
-    Text(0.5,0,'CAL')
-    
-    
-
-![png](output_34_1.png)
-![png](output_34_1.png)
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_34_1.png)
 
 
 rock_type 属性由上图中的色调表征得相当明显。此外，由于图的复杂性，解释这些可视化开始变得困难，但我们仍然可以看出，例如泥岩的SP，GR，CAL均较泥岩更高。当然，如果SP和GR之间有某种联系，我们可能会看到一个逐渐增加或减少的数据点趋势。
@@ -568,15 +526,7 @@ plt.ylabel('GR')
 plt.title('Rock SP - GR - CAL - Type',y=1.05) 
 ```
 
-
-
-
-    Text(0.5,1.05,'Rock SP - GR - CAL - Type')
-    
-    
-
-![png](output_36_1.png)
-![png](output_36_1.png)
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_36_1.png)
 
 
 ### 可视化 5 维数据（5D）
@@ -608,19 +558,7 @@ ax.set_ylabel('GR')
 ax.set_zlabel('CAL')
 ```
 
-    /Users/libingtao/anaconda3/envs/tensorflow/lib/python3.6/site-packages/matplotlib/collections.py:853: RuntimeWarning: invalid value encountered in sqrt
-      scale = np.sqrt(self._sizes) * dpi / 72.0 * self._factor
-    
-    
-    
-    
-    
-    Text(0.5,0,'CAL')
-    
-    
-
-![png](output_38_2.png)
-![png](output_38_2.png)
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_38_2.png)
 
 
 可视化 6 维数据（6-D）
@@ -656,19 +594,7 @@ ax.set_ylabel('GR')
 ax.set_zlabel('CAL')
 ```
 
-    /Users/libingtao/anaconda3/envs/tensorflow/lib/python3.6/site-packages/matplotlib/collections.py:853: RuntimeWarning: invalid value encountered in sqrt
-      scale = np.sqrt(self._sizes) * dpi / 72.0 * self._factor
-    
-    
-    
-    
-    
-    Text(0.5,0,'CAL')
-    
-    
-
-![png](output_40_2.png)
-![png](output_40_2.png)
+![png](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/output_40_2.png)
 
 
 ### 更高维度……
