@@ -56,6 +56,7 @@ $\LaTeX$ 的数学公式有两种：行中公式和独立公式。行中公式�
 **自动编号后的公式可在全文任意处使用 `\eqref{eq:公式名}` 语句引用。**
 
 - 例子：
+
 ```
 $ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，行内公式示例} $
 ```
@@ -63,6 +64,7 @@ $ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\le
 - 显示：$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，行内公式示例} $
 
 - 例子：
+
 ```
 $$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例} $$
 ```
@@ -70,6 +72,7 @@ $$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\l
 - 显示：$$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例} $$
 
 - 例子：
+
 ```
 在公式 \eqref{eq:sample} 中，我们看到了这个被自动编号的公式。
 
@@ -93,6 +96,7 @@ E=mc^2 \text{，自动编号公式示例}
 `^` 表示上标, `_` 表示下标。如果上下标的内容多于一个字符，需要用 `{}` 将这些内容括成一个整体。上下标可以嵌套，也可以同时使用。
 
 - 例子：
+
 ```
 $$ x^{y^z}=(1+{\rm e}^x)^{-2xy^w} $$
 ```
