@@ -4,10 +4,10 @@ book: true
 background-image: https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/topics/ml/large-icon.png?auto=format%2Ccompress&dpr=1&w=320&h=320&fit=fill&bg=FFF
 category: 书籍
 date:   2018-04-08 22:46:03
-title: Linear regression
+title: Logistic regression
 tags:
 
-- Linear regression
+- Logistic regression
 ---
 
 # Logistic regression
@@ -42,4 +42,4 @@ $$\theta := \theta - \frac{\alpha}{m} X^{T} (g(X \theta ) - \vec{y})$$
 
 ## Derivation
 
-![image](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/LR_GD.png)
+![image](https://raw.githubusercontent.com/LiBingtao/LiBingtao.github.io/master/image/LR_GD.PNG)
