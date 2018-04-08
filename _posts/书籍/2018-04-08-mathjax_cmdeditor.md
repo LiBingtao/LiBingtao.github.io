@@ -131,7 +131,7 @@ $$ f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$
 
 - 例子：
 ```
-$$ \left. \frac{\rm du}{(rm dx} \right| _{x=0} $$
+$$ \left. \frac{\rm du}{rm dx} \right| _{x=0} $$
 ```
 - 显示：$$ \left. \frac{\rm du}{\rm dx} \right| _{x=0} $$
 
