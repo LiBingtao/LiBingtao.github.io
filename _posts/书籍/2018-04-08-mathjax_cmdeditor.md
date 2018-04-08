@@ -130,8 +130,8 @@ $$ f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$
 有时候要用 `\left.` 或 `\right.` 进行匹配而不显示本身。
 
 - 例子：
-```python
-# $$ \left. \frac{{\rm d}u}{{\rm d}x} \right| _{x=0} $$
+```
+$$ \left. \frac{ {\rm d} u }{{\rm d}x} \right| _{x=0} $$
 ```
 - 显示：$$ \left. \frac{{\rm d}u}{{\rm d}x} \right| _{x=0} $$
 
