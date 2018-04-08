@@ -12,7 +12,7 @@ tags:
 
 
 
-#Cmd Markdown 公式指导手册
+# Cmd Markdown 公式指导手册
 
 > 转载自: https://www.zybuluo.com/codeep/note/163962
 
@@ -59,12 +59,14 @@ $\LaTeX$ 的数学公式有两种：行中公式和独立公式。行中公式�
 ```
 $ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，行内公式示例} $
 ```
+
 - 显示：$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，行内公式示例} $
 
 - 例子：
 ```
 $$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例} $$
 ```
+
 - 显示：$$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例} $$
 
 - 例子：
@@ -86,7 +88,7 @@ E=mc^2 \text{，自动编号公式示例}
 \label{eq:sample}
 \end{equation}
 
-##2．如何输入上下标
+## 2．如何输入上下标
 
 `^` 表示上标, `_` 表示下标。如果上下标的内容多于一个字符，需要用 `{}` 将这些内容括成一个整体。上下标可以嵌套，也可以同时使用。
 
@@ -103,9 +105,10 @@ $$ x^{y^z}=(1+{\rm e}^x)^{-2xy^w} $$
 ```
 $$ \sideset{^1_2}{^3_4}\bigotimes $$
 ```
+
 - 显示：$$\sideset{^1_2}{^3_4}\bigotimes$$
 
-##3．如何输入括号和分隔符
+## 3．如何输入括号和分隔符
 
 `()`、`[]` 和 `|` 表示符号本身，使用 `\{\}` 来表示 `{}` 。当要显示大号的括号或分隔符时，要用 `\left` 和 `\right` 命令。
 
@@ -123,6 +126,7 @@ $$ \sideset{^1_2}{^3_4}\bigotimes $$
 ```
 $$ f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$
 ```
+
 - 显示：$$ f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$
 
 有时候要用 `\left.` 或 `\right.` 进行匹配而不显示本身。
@@ -131,9 +135,10 @@ $$ f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$
 ```
 $$ \left. \frac{\rm du}{rm dx} \right| _{x=0} $$
 ```
+
 - 显示：$$ \left. \frac{\rm du}{\rm dx} \right| _{x=0} $$
 
-##4．如何输入分数
+## 4．如何输入分数
 
 通常使用 `\frac {分子} {分母}` 命令产生一个分数，分数可嵌套。
 便捷情况可直接输入 `\frac ab` 来快速生成一个 $\frac ab$ 。
@@ -145,7 +150,7 @@ $$\frac{a-1}{b-1} \quad and \quad {a+1\over b+1}$$
 ```
 - 显示：$$\frac{a-1}{b-1} \quad and \quad {a+1\over b+1}$$
 
-##5．如何输入开方
+## 5．如何输入开方
 
 使用 `\sqrt [根指数，省略时为2] {被开方数}` 命令输入开方。
 
@@ -153,9 +158,10 @@ $$\frac{a-1}{b-1} \quad and \quad {a+1\over b+1}$$
 ```
 $$\sqrt{2} \quad and \quad \sqrt[n]{3}$$
 ```
+
 - 显示：$$\sqrt{2} \quad and \quad \sqrt[n]{3}$$
 
-##6．如何输入省略号
+## 6．如何输入省略号
 
 数学公式中常见的省略号有两种，`\ldots` 表示与文本底线对齐的省略号，`\cdots` 表示与文本中线对齐的省略号。
 
@@ -163,9 +169,10 @@ $$\sqrt{2} \quad and \quad \sqrt[n]{3}$$
 ```
 $$f(x_1,x_2,\underbrace{\ldots}_{\rm ldots} ,x_n) = x_1^2 + x_2^2 + \underbrace{\cdots}_{\rm cdots} + x_n^2$$
 ```
+
 - 显示：$$f(x_1,x_2,\underbrace{\ldots}_{\rm ldots} ,x_n) = x_1^2 + x_2^2 + \underbrace{\cdots}_{\rm cdots} + x_n^2$$
 
-##7．如何输入矢量
+## 7．如何输入矢量
 
 使用 `\vec{矢量}` 来自动产生一个矢量。也可以使用 `\overrightarrow` 等命令自定义字母上方的符号。
 
@@ -180,9 +187,10 @@ $$\vec{a} \cdot \vec{b}=0$$
 ```
 $$\overleftarrow{xy} \quad and \quad \overleftrightarrow{xy} \quad and \quad \overrightarrow{xy}$$
 ```
+
 - 显示：$$\overleftarrow{xy} \quad and \quad \overleftrightarrow{xy} \quad and \quad \overrightarrow{xy}$$
 
-##8．如何输入积分
+## 8．如何输入积分
 
 使用 `\int_积分下限^积分上限 {被积表达式}` 来输入一个积分。
 
@@ -190,11 +198,12 @@ $$\overleftarrow{xy} \quad and \quad \overleftrightarrow{xy} \quad and \quad \ov
 ```
 $$\int_0^1 {x^2} \,{\rm d}x$$
 ```
+
 显示：$$\int_0^1 {x^2} \,{\rm d}x$$
 
 本例中 `\,` 和 `{\rm d}` 部分可省略，但建议加入，能使式子更美观。
 
-##9．如何输入极限运算
+## 9．如何输入极限运算
 
 使用 `\lim_{变量 \to 表达式} 表达式` 来输入一个极限。如有需求，可以更改 `\to` 符号至任意符号。
 
@@ -206,7 +215,7 @@ $$ \lim_{n \to +\infty} \frac{1}{n(n+1)} \quad and \quad \lim_{x\leftarrow{示�
 
 显示：$$\lim_{n \to +\infty} \frac{1}{n(n+1)} \quad and \quad \lim_{x\leftarrow{示例}} \frac{1}{n(n+1)}$$
 
-##10．如何输入累加、累乘运算
+## 10．如何输入累加、累乘运算
 
 使用 `\sum_{下标表达式}^{上标表达式} {累加表达式}` 来输入一个累加。
 与之类似，使用 `\prod` `\bigcup` `\bigcap` 来分别输入累乘、并集和交集。
@@ -219,7 +228,7 @@ $$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad a
 
 - 显示：$$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad and \quad \bigcup_{i=1}^{2} R$$
 
-##11．如何输入希腊字母
+## 11．如何输入希腊字母
 
 输入 `\小写希腊字母英文全称` 和 `\首字母大写希腊字母英文全称` 来分别输入小写和大写希腊字母。
 **对于大写希腊字母与现有字母相同的，直接输入大写字母即可。**
@@ -249,7 +258,7 @@ $$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad a
 |\sigma|\Sigma|\varsigma|$\sigma \mid \Sigma \mid \varsigma$|
 |\phi|\Phi|\varphi|$\phi \mid \Phi \mid \varphi$|
 
-##12．如何输入其它特殊字符
+## 12．如何输入其它特殊字符
 
 > **若需要显示更大或更小的字符，在符号前插入 `\large` 或 `\small` 命令。**
 
@@ -257,7 +266,7 @@ $$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad a
 
 > ![Detexify^2](http://i.stack.imgur.com/ScK3R.png)
 
-###(1)．关系运算符
+### (1)．关系运算符
 
 |输入|显示|输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
@@ -267,7 +276,7 @@ $$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad a
 |\geq|$\geq$|\neq|$\neq$|\approx|$\approx$|\equiv|$\equiv$|
 |\sum|$\sum$|\prod|$\prod$|\coprod|$\coprod$|\backslash|$\backslash$|
 
-###(2)．集合运算符
+### (2)．集合运算符
 
 |输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|
@@ -276,13 +285,13 @@ $$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad a
 |\supseteq|$\supseteq$|\bigcap|$\bigcap$|\bigcup|$\bigcup$|
 |\bigvee|$\bigvee$|\bigwedge|$\bigwedge$|\biguplus|$\biguplus$|
 
-###(3)．对数运算符
+### (3)．对数运算符
 
 |输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |\log|$\log$|\lg|$\lg$|\ln|$\ln$|
 
-###(4)．三角运算符
+### (4)．三角运算符
 
 |输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|
@@ -290,7 +299,7 @@ $$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad a
 |\sin|$\sin$|\cos|$\cos$|\tan|$\tan$|
 |\csc|$\csc$|\sec|$\sec$|\cot|$\cot$|
 
-###(5)．微积分运算符
+### (5)．微积分运算符
 
 |输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|
@@ -298,7 +307,7 @@ $$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad a
 |\iiiint|$\iiiint$|\oint|$\oint$|\prime|$\prime$|
 |\lim|$\lim$|\infty|$\infty$|\nabla|$\nabla$|
 
-###(6)．逻辑运算符
+### (6)．逻辑运算符
 
 |输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|
@@ -306,7 +315,7 @@ $$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad a
 |\forall|$\forall$|\exists|$\exists$|\not\subset|$\not\subset$|
 |\not<|$\not<$|\not>|$\not>$|\not=|$\not=$|
 
-###(7)．戴帽符号
+### (7)．戴帽符号
 
 |输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|
@@ -317,7 +326,7 @@ $$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad a
 
 
 
-###(8)．连线符号
+### (8)．连线符号
 |输入|显示|
 |:--:|:--:|
 |\fbox{a+b+c+d}|$\fbox{a+b+c+d}$|
@@ -334,7 +343,7 @@ $$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad a
 |\overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0}|$\overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0}$|
 |\underbrace{a\cdot a\cdots a}_{b\text{ times}}|$\underbrace{a\cdot a\cdots a}_{b\text{ times}}$|
 
-###(9)．箭头符号
+### (9)．箭头符号
 
 - 推荐使用符号：
 |输入|显示|输入|显示|输入|显示|
@@ -355,7 +364,7 @@ $$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad a
 |\longrightarrow|$\longrightarrow$|\Longrightarrow|$\Longrightarrow$|
 |\longleftrightarrow|$\longleftrightarrow$|\Longleftrightarrow|$\Longleftrightarrow$|
 
-##13．如何进行字体转换
+## 13．如何进行字体转换
 
 若要对公式的某一部分字符进行字体转换，可以用 `{\字体 {需转换的部分字符}}` 命令，其中 `\字体` 部分可以参照下表选择合适的字体。一般情况下，公式默认为意大利体 $italic$ 。
 
@@ -392,7 +401,7 @@ $$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad a
 注意比较两个式子间 $dx$ 与 ${\rm d} x$ 的不同。
 使用 `\operatorname` 命令也可以达到相同的效果，详见 [定义新的符号 \operatorname](#1定义新的符号-operatorname) 。
 
-##14．大括号和行标的使用
+## 14．大括号和行标的使用
 
 使用 `\left` 和 `\right` 来创建自动匹配高度的 (圆括号)，[方括号] 和 {花括号} 。
 在每个公式末尾前使用 `\tag{行标}` 来实现行标。
@@ -479,9 +488,9 @@ $$
 \right\rangle
 $$
 
-##15．其它命令
+## 15．其它命令
 
-###(1)．定义新的符号 \operatorname
+### (1)．定义新的符号 \operatorname
 
 查询 [关于此命令的定义](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference/15077#15077) 和 [关于此命令的讨论](http://meta.math.stackexchange.com/search?q=operatorname) 来进一步了解此命令。
 
@@ -492,7 +501,7 @@ $$ \operatorname{Symbol} A $$
 
 - 显示： $$\operatorname{Symbol} A$$
 
-###(2)．添加注释文字 \text
+### (2)．添加注释文字 \text
 
 在 `\text {文字}` 中仍可以使用 `$公式$` 插入其它公式。
 
@@ -504,7 +513,7 @@ $$ f(n)= \begin{cases} n/2, & \text {if $n$ is even} \\ 3n+1, & \text{if $n$ is 
 - 显示：
 $$ f(n)= \begin{cases} n/2, & \text {if $n$ is even} \\ 3n+1, & \text{if $n$ is odd} \end{cases} $$
 
-###(3)．在字符间加入空格
+### (3)．在字符间加入空格
 
 有四种宽度的空格可以使用： `\,`、`\;`、`\quad` 和 `\qquad` 。
 
@@ -517,7 +526,7 @@ $$ a \, b \mid a \; b \mid a \quad b \mid a \qquad b $$
 
 当然，使用 `\text {n个空格}` 也可以达到同样效果。
 
-###(4)．更改文字颜色
+### (4)．更改文字颜色
 
 使用 `\color{颜色}{文字}` 来更改特定的文字颜色。
 更改文字颜色 **需要浏览器支持** ，如果浏览器不知道你所需的颜色，那么文字将被渲染为黑色。
@@ -609,7 +618,7 @@ $$ a \, b \mid a \; b \mid a \quad b \mid a \qquad b $$
 \hline
 \end{array}
 
-###(5)．添加删除线
+### (5)．添加删除线
 
 使用删除线功能必须声明 `$$` 符号。
 
@@ -674,9 +683,9 @@ $$
 此外， `\enclose` 命令还可以产生包围的边框和圆等，参见 [MathML Menclose Documentation](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/menclose) 以查看更多效果。
 
 
-#二、矩阵使用参考
+# 二、矩阵使用参考
 
-##1．如何输入无框矩阵
+## 1．如何输入无框矩阵
 
 在开头使用 `begin{matrix}`，在结尾使用 `end{matrix}`，在中间插入矩阵元素，每个元素之间插入 `&` ，并在每行结尾处使用 `\\` 。
 使用矩阵时必须声明 `$` 或 `$$` 符号。
@@ -700,7 +709,7 @@ $$
         \end{matrix}
 $$
 
-##2．如何输入边框矩阵
+## 2．如何输入边框矩阵
 
 在开头将 `matrix` 替换为 `pmatrix` `bmatrix` `Bmatrix` `vmatrix` `Vmatrix` 。
 
@@ -719,7 +728,7 @@ $ \begin{Vmatrix} 1 & 2 \\ 3 & 4 \\ \end{Vmatrix} $
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |$ \begin{matrix} 1 & 2 \\ 3 & 4 \\ \end{matrix} $|$ \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ \end{pmatrix} $|$ \begin{bmatrix} 1 & 2 \\ 3 & 4 \\ \end{bmatrix} $|$ \begin{Bmatrix} 1 & 2 \\ 3 & 4 \\ \end{Bmatrix} $|$ \begin{vmatrix} 1 & 2 \\ 3 & 4 \\ \end{vmatrix} $|$ \begin{Vmatrix} 1 & 2 \\ 3 & 4 \\ \end{Vmatrix} $|
 
-##3．如何输入带省略符号的矩阵
+## 3．如何输入带省略符号的矩阵
 
 使用 `\cdots` $\cdots$ , `\ddots` $\ddots$ , `\vdots` $\vdots$ 来输入省略符号。
 
@@ -745,7 +754,7 @@ $$
         \end{pmatrix}
 $$
 
-##4．如何输入带分割符号的矩阵
+## 4．如何输入带分割符号的矩阵
 
 详见"[数组使用参考](#五数组与表格使用参考)"。
 
@@ -773,7 +782,7 @@ $$
 
 其中 `cc|c` 代表在一个三列矩阵中的第二和第三列之间插入分割线。
 
-##5．如何输入行中矩阵
+## 5．如何输入行中矩阵
 
 若想在一行内显示矩阵，
 使用`\bigl(\begin{smallmatrix} ... \end{smallmatrix}\bigr)`。
@@ -785,9 +794,9 @@ $$
 
 - 显示：这是一个行中矩阵的示例 $\bigl( \begin{smallmatrix} a & b \\ c & d \end{smallmatrix} \bigr)$ 。
 
-#三、方程式序列使用参考
+# 三、方程式序列使用参考
 
-##1．如何输入一个方程式序列
+## 1．如何输入一个方程式序列
 
 人们经常想要一列整齐且居中的方程式序列。使用 `\begin{align}…\end{align}` 来创造一列方程式，其中在每行结尾处使用 `\\` 。
 使用方程式序列无需声明公式符号 `$` 或 `$$` 。
@@ -816,7 +825,7 @@ $$
 
 本例中每行公式的编号续自 [如何插入公式](#1如何插入公式) 中的自动编号公式 \eqref{eq:sample} 。
 
-##2．在一个方程式序列的每一行中注明原因
+## 2．在一个方程式序列的每一行中注明原因
 
 在 `{align}` 中灵活组合 `\text` 和 `\tag` 语句。`\tag` 语句编号优先级高于自动编号。
 
@@ -838,9 +847,9 @@ $$
 
 本例中第一、第二行的自动编号被 `\tag` 语句覆盖，第三行的编号为自动编号。
 
-#四、条件表达式使用参考
+# 四、条件表达式使用参考
 
-##1．如何输入一个条件表达式
+## 1．如何输入一个条件表达式
 
 使用 `begin{cases}` 来创造一组条件表达式，在每一行条件中插入 `&` 来指定需要对齐的内容，并在每一行结尾处使用 `\\`，以 `end{cases}` 结束。
 条件表达式无需声明 `$` 或 `$$` 符号。
@@ -865,7 +874,7 @@ $$
         \end{cases}
 $$
 
-##2．如何输入一个左侧对齐的条件表达式
+## 2．如何输入一个左侧对齐的条件表达式
 
 若想让文字在 **左侧对齐显示** ，则有如下方式：
 
@@ -893,7 +902,7 @@ $$
         =f(n)
 $$
 
-##3．如何使条件表达式适配行高
+## 3．如何使条件表达式适配行高
 
 在一些情况下，条件表达式中某些行的行高为非标准高度，此时使用 `\\[2ex]` 语句代替该行末尾的 `\\` 来让编辑器适配。
 
@@ -947,9 +956,9 @@ $$|
 **一个 `[ex]` 指一个 "X-Height"，即x字母高度。可以根据情况指定多个 `[ex]`，如 `[3ex]`、`[4ex]` 等。**
 其实可以在任何地方使用 `\\[2ex]` 语句，只要你觉得合适。
 
-#五、数组与表格使用参考
+# 五、数组与表格使用参考
 
-##1．如何输入一个数组或表格
+## 1．如何输入一个数组或表格
 
 通常，一个格式化后的表格比单纯的文字或排版后的文字更具有可读性。数组和表格均以 `begin{array}` 开头，并在其后定义列数及每一列的文本对齐属性，`c` `l` `r` 分别代表居中、左对齐及右对齐。若需要插入垂直分割线，在定义式中插入 `|` ，若要插入水平分割线，在下一行输入前插入 `\hline` 。与矩阵相似，每行元素间均须要插入 `&` ，每行元素以 `\\` 结尾，最后以 `end{array}` 结束数组。
 使用单个数组或表格时无需声明 `$` 或 `$$` 符号。
@@ -974,7 +983,7 @@ n & \text{左对齐} & \text{居中对齐} & \text{右对齐} \\
 3 & -20 & 2000 & 1+10i
 \end{array}
 
-##2．如何输入一个嵌套的数组或表格
+## 2．如何输入一个嵌套的数组或表格
 
 多个数组/表格可 **互相嵌套** 并组成一组数组/一组表格。
 使用嵌套前必须声明 `$$` 符号。
@@ -1063,7 +1072,7 @@ $$
 \end{array}
 $$
 
-##3．如何输入一个方程组
+## 3．如何输入一个方程组
 
 使用 `\begin{array}…\end{array}` 和 `\left\{…\right.` 来创建一个方程组。
 
@@ -1109,9 +1118,9 @@ a_2x+b_2y+c_2z=d_2 \\
 a_3x+b_3y+c_3z=d_3
 \end{cases}
 
-#六、连分数使用参考
+# 六、连分数使用参考
 
-##1．如何输入一个连分式
+## 1．如何输入一个连分式
 
 就像输入分式时使用 `\frac` 一样，使用 `\cfrac` 来创建一个连分数。
 
@@ -1171,7 +1180,7 @@ $$
 
 #七、交换图表使用参考
 
-##1．如何输入一个交换图表
+## 1．如何输入一个交换图表
 
 使用一行 `$ \require{AMScd} $` 语句来允许交换图表的显示。
 声明交换图表后，语法与矩阵相似，在开头使用 `begin{CD}`，在结尾使用 `end{CD}`，在中间插入图表元素，每个元素之间插入 `&` ，并在每行结尾处使用 `\\` 。
@@ -1216,7 +1225,7 @@ $\require{AMScd}$
 在本例中， "very long label"自动延长了它所在箭头以及对应箭头的长度。
 
 
-#八、一些特殊的注意事项
+# 八、一些特殊的注意事项
 
 |**!! 本段内容为个人翻译，可能有不准确之处 !!**|
 |:--:|

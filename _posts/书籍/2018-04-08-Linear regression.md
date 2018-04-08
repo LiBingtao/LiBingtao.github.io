@@ -13,7 +13,7 @@ tags:
 
 
 
-#Linear regression:
+# Linear regression:
 
 Hypothesis:           
 
