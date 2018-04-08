@@ -1,5 +1,4 @@
 ---
-
 layout: blog
 book: true
 background-image: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523185155396&di=f4c9797e882328c8d976fdc1efc2be03&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F728da9773912b31b08abbe008d18367adbb4e1d0.jpg
@@ -9,7 +8,6 @@ title: Cmd Markdown 公式指导手册
 tags:
 
 - Tutorial
-
 ---
 
 
